@@ -19,15 +19,11 @@ color: white;">BeenThere<span>
 
 
 <div *ngFor="let entry of entries">
-<table *ngIf="entry.place" [style.borderColor]="entry.color">
-  <thead>
-    <tr>
-      <td>
-        <button (click)="remove(entry)">remove</button>
-      </td>
-      <td>{{ entry.place.name }}</td>
-  </thead> 
-</table>
+<div *ngIf="entry.place">
+        <button 
+        (click)="remove(entry)"
+        style=font-size:14px;>Remove "{{ entry.place.name }}"</button>
+</div>
 </div>
 
 <div class="map" #map></div>
