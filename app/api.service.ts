@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 const GOOGLE_MAPS_API_KEY = 'AIzaSyBytbyDdTAD1-nmC-GG9KOUgRiLGoA06ZI';
 
 export type Maps = typeof google.maps;
-
+ 
 @Injectable()
 export class ApiService {
 
