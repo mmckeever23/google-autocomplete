@@ -7,7 +7,7 @@ background-color: mediumpurple;
 color: white;">BeenThere<span>
   <input 
     style=display:inline-block;font-size:14px;float:right;margin-right:10px;
-    placeholder="Search for Location"
+    placeholder="Search for Location to Drop Pin"
     autocorrect="off"
     autocapitalize="off"
     spellcheck="off"
@@ -18,12 +18,12 @@ color: white;">BeenThere<span>
 </span></h3>
 
 
-<div *ngFor="let entry of entries">
+<!-- <div *ngFor="let entry of entries">
 <div *ngIf="entry.place">
         <button 
         (click)="remove(entry)"
         style=font-size:14px;>Remove "{{ entry.place.name }}"</button>
 </div>
-</div>
+</div> -->
 
 <div class="map" #map></div>
