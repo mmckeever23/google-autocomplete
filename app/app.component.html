@@ -1,7 +1,12 @@
-<h3>BeenThere</h3>
-
-<div>
-  <input
+<h3 style="font-family: Roboto, sans-serif;
+font-size: 25px;
+padding: 10px 0px 10px 20px;
+margin-block-start: 0px;
+margin-block-end: 0px;
+background-color: mediumpurple;
+color: white;">BeenThere<span>
+  <input 
+    style=display:inline-block;font-size:14px;float:right;
     placeholder="Search for Location"
     autocorrect="off"
     autocapitalize="off"
@@ -9,8 +14,10 @@
     type="text"
     class="form-control"
     #search
-  />
-</div>
+    >
+</span></h3>
+
+
 <div *ngFor="let entry of entries">
 <table *ngIf="entry.place" [style.borderColor]="entry.color">
   <thead>

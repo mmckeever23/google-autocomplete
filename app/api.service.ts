@@ -37,7 +37,7 @@ export class ApiService {
       libraries: 'places',
     };
     const params = Object.keys(query).map(key => `${key}=${query[key]}`).join('&');
-    return `//maps.googleapis.com/maps/api/js?${params}&language=fr`;
+    return `//maps.googleapis.com/maps/api/js?${params}&language=en`;
   }
 
 }
