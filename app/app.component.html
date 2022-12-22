@@ -1,0 +1,26 @@
+<h3>BeenThere</h3>
+
+<div>
+  <input
+    placeholder="Search for Location"
+    autocorrect="off"
+    autocapitalize="off"
+    spellcheck="off"
+    type="text"
+    class="form-control"
+    #search
+  />
+</div>
+<div *ngFor="let entry of entries">
+<table *ngIf="entry.place" [style.borderColor]="entry.color">
+  <thead>
+    <tr>
+      <td>
+        <button (click)="remove(entry)">remove</button>
+      </td>
+      <td>{{ entry.place.name }}</td>
+  </thead> 
+</table>
+</div>
+
+<div class="map" #map></div>

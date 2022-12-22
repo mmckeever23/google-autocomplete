@@ -1,0 +1,9 @@
+input[type=text] {
+  width: 300px;
+  padding: 3px;
+}
+
+.map {
+  height: 87vh;
+  width: 100%;
+}
